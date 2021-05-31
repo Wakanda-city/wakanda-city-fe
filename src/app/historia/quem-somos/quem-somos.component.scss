@@ -1,0 +1,47 @@
+/* Global  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 80vh;
+  padding: 6rem;
+
+  background-color: #ececec;
+}
+
+/* Estilização texto */
+#historia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.card > h1 {
+  color: #0d7746;
+  font-size: 4rem;
+  margin-top: 7rem;
+
+}
+
+.card > h2 {
+  color: #2bc389;
+  font-size: 2.5rem;
+  margin-top: .8rem;
+}
+
+.card > p {
+  color: #4d4d4d;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
