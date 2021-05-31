@@ -16,8 +16,8 @@ Para executar o projeto, será necessário instalar os seguintes programas:
 Abra o terminal do seu sistema operacional em um diretório de sua preferência e execute os seguintes comandos:
 
 ```shell
-git clone https://github.com/tribos-dev/mec-fe.git
-cd mec-fe/
+git clone https://github.com/Wakanda-city/wakanda-city-fe.git
+cd wakanda-city-fe/
 npm install
 ```
 
