@@ -1,0 +1,40 @@
+.texto-cadastro-titulo {
+    font-family: poppins-bold;
+    font-size: 38pt;
+    color: #0d7746;
+}
+
+.texto-cadastro-destaque-2 {
+    font-family: poppins-regular;
+    font-size: 27pt;
+    color: #2bc389;
+}
+
+.form-label {
+    font-family: open-sans-semiBold;
+    font-size: 10pt;
+    color: #4d4d4d;
+}
+
+input {
+    font-family: open-sans-regular;
+    font-size: 10pt;
+    color: #8c8c8c;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border-color: #8c8c8c;
+    width: 338px;
+}
+
+button {
+	background-image: url(../../../../assets/icons/BotãoChamada.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+	color: white;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
