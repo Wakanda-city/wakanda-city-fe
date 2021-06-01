@@ -1,5 +1,5 @@
-import { RodapeComponent } from './../rodape/rodape/rodape.component';
-import { QuemSomosComponent } from './../historia/quem-somos/quem-somos.component';
+import { RodapeComponent } from './rodape/rodape.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
