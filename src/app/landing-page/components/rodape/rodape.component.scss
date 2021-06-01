@@ -7,39 +7,40 @@
 footer {
   width: 100%;
 
-  position: absolute;
+  position: relative;
   bottom: 0;
   padding: 2.5rem 4rem;
 
   background: #4d4d4d;
 }
 
-footer p {
-  position: relative;
-  bottom: 1rem;
-
-  color: white;
-  font-size: 1.2rem;
-
-  text-align: center;
-  align-items: center;
-
-  margin-left: 16rem;
-}
-
 .logo-dinheiro {
+  width: 13rem;
 
-  width: 12rem;
+  grid-template-columns: repeat(2, 1fr);
   position: relative;
   top: 1.6rem;
 
   text-align: initial;
 }
 
+footer p {
+  position: relative;
+  bottom: 1rem;
+  font-family: 'poppins-regular';
+  color: white;
+  font-size: 1rem;
+
+  text-align: center;
+
+
+  margin-left: 16rem;
+}
+
+
 
 .img-c {
   position: relative;
-  top: 0.2rem;
   width: 1.2rem;
 }
 
