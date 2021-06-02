@@ -1,47 +1,43 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 footer {
   width: 100%;
-
   position: relative;
-  bottom: 0;
-  padding: 2.5rem 4rem;
-
+  padding: 3rem 4rem;
   background: #4d4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo-dinheiro {
-  width: 13rem;
-
-  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  max-width: 13rem;
   position: relative;
-  top: 1.6rem;
-
-  text-align: initial;
+  margin: 0 2rem 0 0;
 }
 
-footer p {
+.copyright {
   position: relative;
-  bottom: 1rem;
   font-family: 'poppins-regular';
   color: white;
+  margin: 0;
   font-size: 1rem;
-
+  min-width: 60%;
   text-align: center;
-
-
-  margin-left: 16rem;
+  flex-grow: 2;
 }
 
 
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 2rem 3rem;
+  }
 
-.img-c {
-  position: relative;
-  width: 1.2rem;
+  .logo-dinheiro {
+    max-width: 9rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
 }
-
 
