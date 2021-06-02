@@ -1,18 +1,22 @@
-h1 {
-    font-family: poppins-bold !important; 
-    font-size: 38pt !important;
-    color: #0d7746 !important;
+.banner-destaque-1 {
+    font-family: poppins-bold; 
+    font-size: 43.7pt;
+    color: #0d7746;
 }
 
-h2 {
+.banner-destaque-2 {
     font-family: poppins-regular;
+    font-size: 31.05pt;
+    color: #2bc389;
 }
 
-p {
+.banner-texto {
     font-family: open-sans-regular;
+    font-size: 10.35pt;
+    color: #2bc389;
 }
 
-a {
+.botao-banner, .banner-cabecalho {
     position: relative;
 }
 
@@ -22,4 +26,19 @@ a {
     position: absolute;
     left: 0.9rem;
     bottom: -0.15rem;
+    color: white;
+}
+
+.banner-imagem {
+    width: 45%;
+    height: 45%;
+    transform: translate(-0%,-30%)!important;
+}
+
+.banner-cabecalho {
+    margin-bottom: 4rem;
+}
+
+.banner {
+    margin-top: 6rem;    
 }
