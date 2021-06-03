@@ -1,25 +1,29 @@
 footer {
+  box-sizing: border-box;
   width: 100%;
-  position: relative;
-  padding: 3rem 4rem;
+  padding: 2rem 3rem;
   background: #4d4d4d;
+}
+
+.footer-div {
+  max-width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .logo-dinheiro {
   width: 100%;
   max-width: 13rem;
-  position: relative;
-  margin: 0 2rem 0 0;
+  // margin: 0 2rem 0 0;
+  margin: 1rem;
 }
 
 .copyright {
-  position: relative;
   font-family: 'poppins-regular';
   color: white;
-  margin: 0;
+  margin: 1rem;
   font-size: 1rem;
   min-width: 60%;
   text-align: center;
@@ -27,9 +31,9 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   footer {
-    padding: 2rem 3rem;
+    padding: 1rem 2rem;
   }
 
   .logo-dinheiro {
