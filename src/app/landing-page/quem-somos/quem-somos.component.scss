@@ -45,3 +45,61 @@ body {
 }
 
 
+/* Responsividade */
+@media (max-width: 943px) {
+  section .texto-1 h1 {
+    font-size: 3.2rem;
+  }
+
+  section .texto-1 h2 {
+    font-size: 1.8ren;
+  }
+
+  section .texto-2 p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 799px) {
+  section .texto-1 h1 {
+    font-size: 2.8rem;
+  }
+
+  section .texto-1 h2 {
+    font-size: 2rem;
+  }
+
+  section .texto-2 p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 727px) {
+  section .texto-1 h1 {
+    font-size: 2.4rem;
+  }
+
+  section .texto-1 h2 {
+    font-size: 1.8rem;
+  }
+
+  section .texto-2 p {
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 723px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  #historia {
+    position: relative;
+    bottom: 4rem;
+  }
+}
+
+
