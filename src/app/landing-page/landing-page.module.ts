@@ -7,6 +7,7 @@ import { CadastroCidadaoComponent } from './components/cadastro-cidadao/cadastro
 import { HeaderComponent } from './header/header.component';
 
 import { NgxMaskModule } from 'ngx-mask';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgxMaskModule } from 'ngx-mask';
   ],
   imports: [
     CommonModule,
-    NgxMaskModule.forRoot()
+    NgxMaskModule,
+    ReactiveFormsModule
   ]
 })
 export class LandingPageModule { }

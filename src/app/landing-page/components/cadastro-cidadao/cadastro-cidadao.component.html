@@ -3,28 +3,28 @@
         <h1 class="texto-cadastro-titulo">CADASTRE-SE</h1>
         <h2 class="texto-cadastro-destaque-2">Lorem Ipsum</h2>
     </div>
-    <form class="col-auto mb-4">
+    <form class="col-auto mb-4" [formGroup]="cidadaoForm" (ngSubmit)="teste">
         <div class="form-group mb-4">
             <label for="InputNome" class="form-label ps-3">Nome</label>
-            <input type="text" class="form-control" id="InputNome" aria-describedby="emailHelp"
+            <input formControlName="apelido" type="text" class="form-control" id="InputNome" aria-describedby="emailHelp"
                 placeholder="Informe seu nome completo">
         </div>
         <div class="form-group mb-4">
             <label for="InputWhatsApp" class="form-label ps-3">WhatsApp</label>
-            <input type="tel" class="form-control" id="InputWhatsApp" placeholder="DDD + Número" mask="(00) 0 0000-0000">
+            <input formControlName="whatsapp" type="tel" class="form-control" id="InputWhatsApp" placeholder="DDD + Número" mask="(00) 0 0000-0000">
         </div>
         <div class="form-group mb-4">
             <label for="InputEmail" class="form-label ps-3">Email</label>
-            <input type="email" class="form-control" id="InputEmail" placeholder="exemplo@exemplo.com">
+            <input formControlName="email" type="email" class="form-control" id="InputEmail" placeholder="exemplo@exemplo.com">
         </div>
         <div class="form-group mb-4">
             <label for="InputCidadeUF" class="form-label ps-3">Cidade/UF</label>
-            <input type="text" class="form-control" id="InputCidadeUF"
+            <input formControlName="cidadeUF" type="text" class="form-control" id="InputCidadeUF"
                 placeholder="Informe sua cidade/UF onde você mora">
         </div>
-        <button type="submit" class="">
+        <button type="submit" [disabled]="cidadaoForm.invalid" class="">
             <small class="texto-button-confirmar">Confirmar</small> 
-            <img src="../../../../assets/icons/Botão chamada.svg" alt="">
+            <img src="../../../../assets/icons/botao-chamada.svg" alt="">
         </button>
     </form>
 </div>
