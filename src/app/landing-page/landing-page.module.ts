@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CadastroCidadaoComponent } from './components/cadastro-cidadao/cadastro-cidadao.component';
+import { HeaderComponent } from './header/header.component';
 
 import { NgxMaskModule } from 'ngx-mask';
 
@@ -11,7 +12,8 @@ import { NgxMaskModule } from 'ngx-mask';
   declarations: [
     LandingPageComponent,
     BannerComponent,
-    CadastroCidadaoComponent
+    CadastroCidadaoComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
