@@ -1,0 +1,37 @@
+.conteiner{
+    padding-top: 50px;
+    padding-left: 65px;
+}
+
+.text-nav{
+    padding-right: 65px;
+    padding-top: 10px;
+}
+
+.text-link{
+    text-decoration: none;
+    color: #0d7746;
+    font-family: poppins-semiBold;
+    font-size: 9,5pt;
+}
+
+.botao{
+    border: none;
+    background-image: url('../../../assets/icons/Botão\ Chamada.svg') !important;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    width: 167px;
+    height: 48px;
+    background-repeat: no-repeat;
+    font-family: poppins-semiBold;
+    color: white;
+    margin-right: 120px;
+  }
+
+  .caixa{
+      padding: 10px;
+  }
