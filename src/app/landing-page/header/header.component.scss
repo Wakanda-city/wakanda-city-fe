@@ -1,5 +1,5 @@
 .conteiner{
-    padding-top: 40px;
+    padding-top: 50px;
     padding-left: 65px;
 }
 
@@ -17,16 +17,15 @@
 
 .botao{
     border: none;
-    background-image: url('../../../assets/icons/Botão\ Chamada.svg');
+    background-image: url('../../../assets/icons/Botão\ Chamada.svg') !important;
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
     background-size: 100% 100%;
     padding-bottom: 10px;
     padding-top: 6px;
-    position: relative;
-    width: 170px;
-    height: 50px;
+    width: 167px;
+    height: 48px;
     background-repeat: no-repeat;
     font-family: poppins-semiBold;
     color: white;
