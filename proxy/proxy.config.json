@@ -1,0 +1,8 @@
+{
+    "/wakanda-city/app/*": {
+        "target": "http://localhost:8080",
+        "source": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}

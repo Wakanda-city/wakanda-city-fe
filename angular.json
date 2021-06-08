@@ -81,7 +81,8 @@
               "browserTarget": "wakanda-city-fe:build:production"
             },
             "development": {
-              "browserTarget": "wakanda-city-fe:build:development"
+              "browserTarget": "wakanda-city-fe:build:development",
+              "proxyConfig": "./proxy/proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

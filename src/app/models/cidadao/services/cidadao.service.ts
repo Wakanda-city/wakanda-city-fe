@@ -8,9 +8,12 @@ import { Cidadao } from '../interfaces/cidadao';
 })
 export class CidadaoService {
 
+  headers = { "Content-Type": "application/json" };
+
   constructor(private http: HttpClient) { }
 
   preCadastrCidadao(cidadao: Cidadao) {
-    return this.http.post(environment.wakandaCity.cidadao.preCadastro, JSON.stringify(cidadao), { observe: "response" })
+    return this.http.post(environment.wakandaCity.cidadao.preCadastro, JSON.stringify(cidadao), 
+      { observe: "response", headers: this.headers })
   }
 }
