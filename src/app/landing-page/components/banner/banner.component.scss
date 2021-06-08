@@ -1,0 +1,60 @@
+.banner-destaque-1 {
+    font-family: poppins-bold; 
+    font-size: 55pt;
+    color: #0d7746;
+}
+
+.banner-destaque-2 {
+    font-family: poppins-regular;
+    font-size: 38pt;
+    color: #2bc389;
+}
+
+.banner-texto {
+    font-family: open-sans-regular;
+    font-size: 13pt;
+    color: #2bc389;
+}
+
+.botao-banner, .banner-cabecalho {
+    position: relative;
+}
+
+.botao-banner-image {
+    width: 11rem;
+}
+
+.texto-botao-cadastro-banner {
+    font-family:poppins-semiBold; 
+    font-size: 1.1rem;
+    position: absolute;
+    left: 1.9rem;
+    bottom: -0.15rem;
+    color: white;
+}
+
+.banner-cabecalho {
+    margin-bottom: 1rem;
+}
+
+.banner-imagem {
+    width: 45%;
+    height: 45%;
+    transform: translate(-0%,-30%)!important;
+}
+
+.banner {
+    margin-top: 6rem; 
+    box-shadow: 0px 10px 20px -10px #504f4f; 
+}
+
+@media (max-width: 569px)
+{
+  .banner {
+        margin-top: 0rem;
+   }
+
+   .banner-cabecalho {
+        margin-bottom: 4rem;
+    }
+}
