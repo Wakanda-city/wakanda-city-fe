@@ -3,27 +3,45 @@
         <h1 class="texto-cadastro-titulo">CADASTRE-SE</h1>
         <h2 class="texto-cadastro-destaque-2">Lorem Ipsum</h2>
     </div>
-    <form class="col-auto mb-4" [formGroup]="cidadaoForm" (ngSubmit)="teste">
+    <form class="col-auto mb-4" [formGroup]="cidadaoForm">
         <div class="form-group mb-4">
             <label for="InputNome" class="form-label ps-3">Nome</label>
-            <input formControlName="apelido" type="text" class="form-control" id="InputNome" aria-describedby="emailHelp"
-                placeholder="Informe seu nome completo">
+            <input formControlName="apelido" type="text" class="form-control" id="InputNome"
+                aria-describedby="emailHelp" placeholder="Informe seu nome completo">
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.apelido.errors?.required"
+                messagem="Digite seu nome para continuarmos"></app-validator-error-message>
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.apelido.errors?.minlength"
+                messagem="O nome é muito pequeno!"></app-validator-error-message>
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.apelido.errors?.maxlength"
+                messagem="O nome é muito grande!"></app-validator-error-message>
         </div>
         <div class="form-group mb-4">
             <label for="InputWhatsApp" class="form-label ps-3">WhatsApp</label>
-            <input formControlName="whatsapp" type="tel" class="form-control" id="InputWhatsApp" placeholder="DDD + Número" mask="(00) 0 0000-0000">
+            <input formControlName="whatsapp" type="tel" class="form-control" id="InputWhatsApp"
+                placeholder="DDD + Número" [mask]="whatsappMask">
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.whatsapp.errors?.required"
+                messagem="Digite seu número de celular para continuarmos"></app-validator-error-message>
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.whatsapp.errors?.pattern"
+                messagem="Número de celular invalido!"></app-validator-error-message>
         </div>
         <div class="form-group mb-4">
             <label for="InputEmail" class="form-label ps-3">Email</label>
-            <input formControlName="email" type="email" class="form-control" id="InputEmail" placeholder="exemplo@exemplo.com">
+            <input formControlName="email" type="email" class="form-control" id="InputEmail"
+                placeholder="exemplo@exemplo.com">
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.email.errors?.required"
+                messagem="Digite seu email para continuarmos"></app-validator-error-message>
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.email.errors?.pattern"
+                messagem="E-mail invalido!"></app-validator-error-message>
         </div>
         <div class="form-group mb-4">
             <label for="InputCidadeUF" class="form-label ps-3">Cidade/UF</label>
-            <input formControlName="cidadeUF" type="text" class="form-control" id="InputCidadeUF"
+            <input formControlName="codigoMunicipio" type="text" class="form-control" id="InputCidadeUF"
                 placeholder="Informe sua cidade/UF onde você mora">
+            <app-validator-error-message *ngIf="this.getCidadaoFormControl.codigoMunicipio.errors?.required"
+                messagem="Digite o nome do seu município para continuarmos"></app-validator-error-message>
         </div>
-        <button type="submit" [disabled]="cidadaoForm.invalid" class="">
-            <small class="texto-button-confirmar">Confirmar</small> 
+        <button (click)="enviarCidadao()" [disabled]="cidadaoForm.invalid" class="">
+            <small class="texto-button-confirmar">Confirmar</small>
             <img src="../../../../assets/icons/botao-chamada.svg" alt="">
         </button>
     </form>

@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 
 import { NgxMaskModule } from 'ngx-mask';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CompartilhadoModule } from '../compartilhado/compartilhado.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     NgxMaskModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CompartilhadoModule
   ]
 })
 export class LandingPageModule { }
