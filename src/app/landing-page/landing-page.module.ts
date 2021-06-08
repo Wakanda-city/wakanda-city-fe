@@ -2,13 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
 @NgModule({
   declarations: [
     LandingPageComponent,
-    BannerComponent
+    BannerComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule
