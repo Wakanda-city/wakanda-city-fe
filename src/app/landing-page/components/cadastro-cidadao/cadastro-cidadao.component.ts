@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Cidadao } from 'src/app/models/cidadao/interfaces/cidadao';
-import { CidadaoService } from 'src/app/models/cidadao/services/cidadao.service';
+import { Cidadao } from 'src/app/models/cidadao/cidadao';
+import { CidadaoService } from 'src/app/services/cidadao/cidadao.service';
+
 
 @Component({
   selector: 'app-cadastro-cidadao',
