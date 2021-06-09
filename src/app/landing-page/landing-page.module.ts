@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 
@@ -10,7 +11,8 @@ import { RodapeComponent } from './components/rodape/rodape.component';
   declarations: [
     LandingPageComponent,
     BannerComponent,
-    RodapeComponent
+    RodapeComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,

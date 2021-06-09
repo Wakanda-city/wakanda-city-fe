@@ -9,6 +9,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
   declarations: [
     AppComponent,
   ],
+  
   imports: [
     BrowserModule,
     AppRoutingModule,
