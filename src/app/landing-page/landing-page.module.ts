@@ -5,7 +5,9 @@ import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CadastroCidadaoComponent } from './components/cadastro-cidadao/cadastro-cidadao.component';
-import { HeaderComponent } from './header/header.component';
+import { RodapeComponent } from './components/rodape/rodape.component';
+import { HeaderComponent } from './components/header/header.component';
+
 
 import { NgxMaskModule } from 'ngx-mask';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -16,6 +18,7 @@ import { CompartilhadoModule } from '../compartilhado/compartilhado.module';
     LandingPageComponent,
     BannerComponent,
     CadastroCidadaoComponent,
+    RodapeComponent,
     HeaderComponent
   ],
   imports: [
