@@ -7,7 +7,7 @@ import { LandingPageModule } from './landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   
   imports: [

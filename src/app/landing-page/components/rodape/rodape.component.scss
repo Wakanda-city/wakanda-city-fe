@@ -1,0 +1,43 @@
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 2rem 3rem;
+  background: #4d4d4d;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: inset 0px 0px 30px -20px black
+}
+
+.logo-dinheiro {
+  width: 100%;
+  max-width: 13rem;
+  margin: 1rem;
+}
+
+.copyright {
+  font-family: 'poppins-regular';
+  color: white;
+  margin: 1rem;
+  font-size: 1rem;
+  min-width: 60%;
+  text-align: center;
+  flex-grow: 2;
+}
+
+
+@media only screen and (max-width: 800px) {
+  footer {
+    padding: 1rem 2rem;
+  }
+
+  .logo-dinheiro {
+    max-width: 9rem;
+  }
+
+  .copyright {
+    font-size: 0.75rem;
+  }
+}
+
