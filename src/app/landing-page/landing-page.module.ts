@@ -1,3 +1,5 @@
+import { RodapeComponent } from './rodape/rodape.component';
+import { QuemSomosComponent } from './quem-somos/quem-somos.component';
 import { NgModule } from '@angular/core';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
@@ -17,6 +19,7 @@ import { CompartilhadoModule } from '../compartilhado/compartilhado.module';
   declarations: [
     LandingPageComponent,
     BannerComponent,
+    QuemSomosComponent,
     CadastroCidadaoComponent,
     RodapeComponent,
     HeaderComponent

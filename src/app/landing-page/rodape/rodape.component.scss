@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  width: 100%;
+
+  position: fixed;
+  bottom: 0;
+  padding: 2.5rem 4rem;
+
+  background: #4d4d4d;
+}
+
+footer p {
+  position: relative;
+  bottom: 1rem;
+
+  color: white;
+  font-size: 1.2rem;
+
+  text-align: center;
+  align-items: center;
+
+  margin-left: 16rem;
+}
+
+.logo-dinheiro {
+
+  width: 12rem;
+  position: relative;
+  top: 1.6rem;
+
+  text-align: initial;
+}
+
+
+.img-c {
+  position: relative;
+  top: 0.2rem;
+  width: 1.2rem;
+}
+
+
