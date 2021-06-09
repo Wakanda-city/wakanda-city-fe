@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Cidadao } from '../interfaces/cidadao';
+
+import { Cidadao } from 'src/app/models/cidadao/interfaces/cidadao';
 
 @Injectable({
   providedIn: 'root'

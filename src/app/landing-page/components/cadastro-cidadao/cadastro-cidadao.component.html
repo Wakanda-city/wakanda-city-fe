@@ -36,7 +36,12 @@
         <div class="form-group mb-4">
             <label for="InputCidadeUF" class="form-label ps-3">Cidade/UF</label>
             <input formControlName="codigoMunicipio" type="text" class="form-control" id="InputCidadeUF"
-                placeholder="Informe sua cidade/UF onde você mora">
+                placeholder="Informe sua cidade/UF onde você mora" [matAutocomplete]="auto">
+                <mat-autocomplete autoActiveFirstOption [displayWith]="displayFn" #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of opcoesFiltradas | async" [value]="option">
+                        {{option.nome}}/{{option.uf}}
+                    </mat-option>
+                </mat-autocomplete>
             <app-validator-error-message *ngIf="this.getCidadaoFormControl.codigoMunicipio.errors?.required"
                 messagem="Digite o nome do seu município para continuarmos"></app-validator-error-message>
         </div>

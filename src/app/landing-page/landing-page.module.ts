@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { CommonModule } from '@angular/common';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
@@ -21,7 +22,8 @@ import { CompartilhadoModule } from '../compartilhado/compartilhado.module';
     CommonModule,
     NgxMaskModule,
     ReactiveFormsModule,
-    CompartilhadoModule
+    CompartilhadoModule,
+    MatAutocompleteModule
   ]
 })
 export class LandingPageModule { }
