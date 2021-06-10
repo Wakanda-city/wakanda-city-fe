@@ -94,11 +94,16 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+    padding: 20% 10% 10% 10%;
   }
 
   #historia {
     position: relative;
     bottom: 4rem;
+  }
+  .texto-1 > h1 {
+    margin-top: 2em;
+    
   }
 }
 
