@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CadastroCidadaoComponent } from './components/cadastro-cidadao/cadastro-cidadao.component';
-import { RodapeComponent } from './components/rodape/rodape.component';
 import { HeaderComponent } from './components/header/header.component';
 
 

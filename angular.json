@@ -78,7 +78,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "wakanda-city-fe:build:production"
+              "browserTarget": "wakanda-city-fe:build:production",
+              "proxyConfig": "./proxy/prod-proxy.config.json"
             },
             "development": {
               "browserTarget": "wakanda-city-fe:build:development",

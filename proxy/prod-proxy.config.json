@@ -1,0 +1,8 @@
+{
+    "/wakanda-city/app/*": {
+        "target": "http://ec2-54-232-164-86.sa-east-1.compute.amazonaws.com:8080",
+        "source": false,
+        "logLevel": "debug",
+        "changeOrigin": true
+    }
+}
