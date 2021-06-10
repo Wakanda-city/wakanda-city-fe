@@ -51,10 +51,18 @@
 @media (max-width: 569px)
 {
   .banner {
-        margin-top: 0rem;
+        padding: 0 !important;
+        width: 100%;
+        margin: 0;
    }
 
    .banner-cabecalho {
         margin-bottom: 4rem;
     }
+
+    .banner-imagem{
+        padding: 0 !important;
+        margin: 5em 0 0 0;
+    }
+   
 }

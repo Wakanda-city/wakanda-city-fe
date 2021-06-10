@@ -34,3 +34,12 @@
   .caixa{
       padding: 10px;
   }
+
+  @media (max-width: 569px){
+    .conteiner{
+      padding: 10%;
+
+      .botao{
+          margin-top: 20px;
+      }
+  }}
